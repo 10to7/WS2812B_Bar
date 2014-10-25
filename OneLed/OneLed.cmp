@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (2014-03-19 BZR 4756)-product date = Sat 25 Oct 2014 23:31:38 BST
+
+BeginCmp
+TimeStamp = /544C1A4C;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = 10to7_sm_standard:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /544C1B92;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /544C1BA6;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /544C1A10;
+Reference = U1;
+ValeurCmp = WS2812B;
+IdModule  = 10to7_sm_standard:SM5050_4pin;
+EndCmp
+
+EndListe

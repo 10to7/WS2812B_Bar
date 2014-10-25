@@ -1,0 +1,161 @@
+
+(session OneLed.ses
+  (base_design OneLed.dsn)
+  (placement
+    (resolution um 10)
+    (component 10to7_sm_standard:SM0402
+      (place C1 1409700 -1049020 front 0)
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x03
+      (place K1 1371600 -1016000 front 90)
+      (place K2 1447800 -1016000 front 90)
+    )
+    (component 10to7_sm_standard:SM5050_4pin
+      (place U1 1409700 -1016000 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(2014-03-19 BZR 4756)-product")
+    )
+    (library_out 
+      (padstack "Via[0-1]_889:635_um"
+        (shape
+          (circle F.Cu 8890 0 0)
+        )
+        (shape
+          (circle B.Cu 8890 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net +5V
+        (wire
+          (path F.Cu 2540
+            1371600 -1041400
+            1385573 -1041400
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1393200 -1046000
+            1393200 -1034687
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1385573 -1041400
+            1392286 -1034687
+            1393200 -1034687
+          )
+        )
+        (wire
+          (path B.Cu 2540
+            1447800 -1041400
+            1371600 -1041400
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1405204 -1049020
+            1399397 -1049020
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1393200 -1046000
+            1396377 -1046000
+            1399397 -1049020
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path B.Cu 2540
+            1371600 -990600
+            1447800 -990600
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1426202 -991658
+            1414196 -1003664
+            1414196 -1049020
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1426200 -991656
+            1426202 -991658
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1426202 -991658
+            1432769 -991658
+            1433827 -990600
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1426200 -986000
+            1426200 -991656
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1447800 -990600
+            1433827 -990600
+          )
+        )
+      )
+      (net /Di
+        (wire
+          (path F.Cu 2540
+            1371600 -1016000
+            1371600 -1003551
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1393200 -986000
+            1393200 -997313
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1393200 -997313
+            1386962 -1003551
+            1371600 -1003551
+          )
+        )
+      )
+      (net /Do
+        (wire
+          (path F.Cu 2540
+            1447800 -1016000
+            1447800 -1028449
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1426200 -1046000
+            1426200 -1034687
+          )
+        )
+        (wire
+          (path F.Cu 2540
+            1426200 -1034687
+            1432438 -1028449
+            1447800 -1028449
+          )
+        )
+      )
+    )
+  )
+)

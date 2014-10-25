@@ -1,0 +1,133 @@
+(pcb /home/elaine/Projects/WS2812B_Bar/OneLed/OneLed.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2014-03-19 BZR 4756)-product")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  135636 -97536  135636 -105664  146304 -105664  146304 -97536
+            135636 -97536)
+    )
+    (via "Via[0-1]_889:635_um")
+    (rule
+      (width 254)
+      (clearance 254.1)
+      (clearance 254.1 (type default_smd))
+      (clearance 63.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component 10to7_sm_standard:SM0402
+      (place C1 140970 -104902 front -0 (PN 0.1uF))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x03
+      (place K1 137160 -101600 front 90 (PN CONN_3))
+      (place K2 144780 -101600 front 90 (PN CONN_3))
+    )
+    (component 10to7_sm_standard:SM5050_4pin
+      (place U1 140970 -101600 front 90 (PN WS2812B))
+    )
+  )
+  (library
+    (image 10to7_sm_standard:SM0402
+      (outline (path signal 150  -975 -625  975 -625))
+      (outline (path signal 150  975 -625  975 625))
+      (outline (path signal 150  975 625  -975 625))
+      (outline (path signal 150  -975 625  -975 -625))
+      (pin Rect[T]Pad_398.78x599.44_um 1 -449.58 0)
+      (pin Rect[T]Pad_398.78x599.44_um 2 449.58 0)
+    )
+    (image Pin_Headers:Pin_Header_Straight_1x03
+      (outline (path signal 150  -1270 -1270  3810 -1270))
+      (outline (path signal 150  3810 -1270  3810 1270))
+      (outline (path signal 150  3810 1270  -1270 1270))
+      (outline (path signal 150  -3810 1270  -1270 1270))
+      (outline (path signal 150  -1270 1270  -1270 -1270))
+      (outline (path signal 150  -3810 1270  -3810 -1270))
+      (outline (path signal 150  -3810 -1270  -1270 -1270))
+      (pin Rect[A]Pad_1727.2x2032_um 1 -2540 0)
+      (pin Oval[A]Pad_1727.2x2032_um 2 0 0)
+      (pin Oval[A]Pad_1727.2x2032_um 3 2540 0)
+    )
+    (image 10to7_sm_standard:SM5050_4pin
+      (outline (path signal 150  1600.78 0  1522.43 -494.669  1295.06 -940.915  940.915 -1295.06
+            494.669 -1522.43  0 -1600.78  -494.669 -1522.43  -940.915 -1295.06
+            -1295.06 -940.915  -1522.43 -494.669  -1600.78 0  -1522.43 494.669
+            -1295.06 940.915  -940.915 1295.06  -494.669 1522.43  0 1600.78
+            494.669 1522.43  940.915 1295.06  1295.06 940.915  1522.43 494.669))
+      (outline (path signal 150  1750 -2500  2500 -1750))
+      (outline (path signal 150  -2500 2500  2500 2500))
+      (outline (path signal 150  2500 2500  2500 -2500))
+      (outline (path signal 150  2500 -2500  -2500 -2500))
+      (outline (path signal 150  -2500 -2500  -2500 2500))
+      (pin Rect[T]Pad_1500x900_um 1 -3000 1650)
+      (pin Rect[T]Pad_1500x900_um 2 -3000 -1650)
+      (pin Rect[T]Pad_1500x900_um 3 3000 -1650)
+      (pin Rect[T]Pad_1500x900_um 4 3000 1650)
+    )
+    (padstack Oval[A]Pad_1727.2x2032_um
+      (shape (path F.Cu 1727.2  0 -152.4  0 152.4))
+      (shape (path B.Cu 1727.2  0 -152.4  0 152.4))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_398.78x599.44_um
+      (shape (rect F.Cu -199.39 -299.72 199.39 299.72))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1500x900_um
+      (shape (rect F.Cu -750 -450 750 450))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1727.2x2032_um
+      (shape (rect F.Cu -863.6 -1016 863.6 1016))
+      (shape (rect B.Cu -863.6 -1016 863.6 1016))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:635_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+  )
+  (network
+    (net +5V
+      (pins C1-1 K1-1 K2-1 U1-1)
+    )
+    (net GND
+      (pins C1-2 K1-3 K2-3 U1-3)
+    )
+    (net /Di
+      (pins K1-2 U1-4)
+    )
+    (net /Do
+      (pins K2-2 U1-2)
+    )
+    (class kicad_default "" +5V /Di /Do GND
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 254)
+        (clearance 254.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
